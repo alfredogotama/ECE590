@@ -1,0 +1,21 @@
+/*
+ECE 590 - Homework #1
+Alfredo Any
+Graduate Student - MS in Electrical Engineering 
+(specialization area: Control and Robotics)
+
+Make an LED blink at 0.5 Hz using OpenCM 9.04 microcontroller
+
+Referenced from ROBOTIS example: Blink_LED
+*/
+void setup() {
+  // Set up the built-in LED pin as an output:
+  pinMode(BOARD_LED_PIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(BOARD_LED_PIN, HIGH); // set to as HIGH LED is turn-off
+  delay(1000);          // Wait for 1 second
+  digitalWrite(BOARD_LED_PIN, LOW);  // set to as LOW LED is turn-on
+  delay(1000);          // Wait for 1 second
+}
